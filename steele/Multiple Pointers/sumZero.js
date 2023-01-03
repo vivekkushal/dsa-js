@@ -1,3 +1,5 @@
+// Write a function called 'sumZero' which accepts a 'sorted' array of integers. The function should find the 'first' pair where the sum is 0. Return an array that includes both values that sum to 0 or undefined if a pair does not exist.
+
 // The function should find the first pair where the sum is zero
 
 // Works for sorted arrays only
@@ -19,5 +21,5 @@ function sumZero(arr) {
   }
 }
 
-sumZero([-4, -3, -2, -1, 0, 1, 2, 4, 10]);
+console.log(sumZero([-4, -3, -2, -1, 0, 1, 2, 3, 10]));
 // [-3, 3]

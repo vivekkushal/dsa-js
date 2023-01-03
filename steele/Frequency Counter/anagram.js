@@ -1,3 +1,5 @@
+// Given two strings, write a function to determine if the second string is an anagram of the first. An anagram is a word, phrase or name formed by rearranging the letters of another, such as 'cinema', formed from 'iceman'.
+
 // Requires 3 loops and 2 objects
 function anagram(str1, str2) {
   if (str1.length !== str2.length) {
@@ -25,6 +27,9 @@ function anagram(str1, str2) {
   return true;
 }
 
+console.log(anagram("cinema", "iceman"));
+// true
+
 // Requires only 2 loops and 1 object
 function betterAnagram(str1, str2) {
   if (str1.length !== str2.length) {
@@ -48,5 +53,5 @@ function betterAnagram(str1, str2) {
   return true;
 }
 
-betterAnagram("cinema", "iceman");
+console.log(betterAnagram("cinema", "iceman"));
 // true
