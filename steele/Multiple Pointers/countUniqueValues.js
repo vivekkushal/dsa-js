@@ -23,7 +23,7 @@ function countUniqueValues(arr) {
   for (let right = 1; right < arr.length; right++) {
     if (arr[left] !== arr[right]) {
       left++;
-      arr[left] = arr[right];
+      arr[left] = arr[right]; // we are changing the original array itself
     }
   }
   return left + 1;
