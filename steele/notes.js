@@ -44,3 +44,9 @@ let endPos; // Ending position of the sliding window
 let Min = 0;
 let Max = arr.length - 1;
 let middle = Math.floor((Max + Min) / 2);
+
+// ------------------------------------ Recursion --------------------
+
+// 0.) The Call Stack - This is a very important video
+
+// 1.) It's a 'Stack' data structure. Any time a function is invoked it is 'pushed' on top of the call stack. When JavaScript sees the 'return' keyword or when the function ends, the compiler will 'pop' it.
