@@ -45,8 +45,35 @@ let Min = 0;
 let Max = arr.length - 1;
 let middle = Math.floor((Max + Min) / 2);
 
-// ------------------------------------ Recursion --------------------
+// ------------------------------------ Recursion -----------------------------
 
 // 0.) The Call Stack - This is a very important video
 
 // 1.) It's a 'Stack' data structure. Any time a function is invoked it is 'pushed' on top of the call stack. When JavaScript sees the 'return' keyword or when the function ends, the compiler will 'pop' it.
+
+// 2.) Pitfalls of Recursion - 👉🏻 No base case
+//                             👉🏻 Forgetting to return or returning the wrong thing
+//                             👉🏻 Stack Overflow
+
+// 3.) Helper method recursion - function inside a function
+function outer(input) {
+  // result collection variable
+  var outerScopedVariable = [];
+
+  // helper function definition
+  function helper(helperInput) {
+    // modify the outerScopedVariable
+    helper(helperInput--);
+  }
+
+  // helper function call
+  helper(input);
+
+  // return result
+  return outerScopedVariable;
+}
+
+// 4.) Pure recursion tips
+//     👉🏻 For arrays, use methods like 'slice', 'spread operator', and 'concat' that makes copies of arrays so you do not mutate them
+//     👉🏻 Remember that strings are immutable so you will need to use methods like 'slice', 'substr' or 'substring' to make copies of strings
+//     👉🏻 To make copies of objects use 'Object.assign' or the 'spread operator'
