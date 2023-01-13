@@ -45,6 +45,9 @@ let Min = 0;
 let Max = arr.length - 1;
 let middle = Math.floor((Max + Min) / 2);
 
+// 2.) While loop is better for Divide and Conquer
+//     👉🏻 while (Min <= Max)
+
 // ------------------------------------ Recursion -----------------------------
 
 // 0.) The Call Stack - This is a very important video
@@ -79,3 +82,10 @@ function outer(input) {
 //     👉🏻 To make copies of objects use 'Object.assign' or the 'spread operator'
 
 // ------------------------------------ Searching -----------------------------
+
+// 0.) Linear Search - O(n)
+
+// 1.) Binary Search - O(log n)
+//     👉🏻 Binary search is much faster form of search
+//     👉🏻 Rather than eliminating one element at a time, you can eliminate 'half' of the remaining elements at a time
+//     👉🏻 Binary search only works on 'sorted' arrays!
