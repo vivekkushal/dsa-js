@@ -14,7 +14,7 @@ function sameFrequency(num1, num2) {
 
   while (num2 > 0) {
     let digit = num2 % 10;
-    if (digit in fc && fc[digit] > 0) {
+    if (fc[digit] > 0) {
       fc[digit] -= 1;
     } else {
       return false;

@@ -13,9 +13,12 @@ function countUniqueValues(arr) {
   return counter;
 }
 
+console.log(countUniqueValues([1, 1, 2, 3, 3, 4, 5, 6, 6, 7]));
+// 7
+
 // With multiple pointers - TC: O(n), SC: O(n)
 // We still have the information about what those unique values are in this method
-function countUniqueValues(arr) {
+function countUniqueValuesMP(arr) {
   if (arr.length === 0) return 0;
 
   let left = 0;
@@ -29,5 +32,5 @@ function countUniqueValues(arr) {
   return left + 1;
 }
 
-countUniqueValues([1, 1, 2, 3, 3, 4, 5, 6, 6, 7]);
+console.log(countUniqueValuesMP([1, 1, 2, 3, 3, 4, 5, 6, 6, 7]));
 // 7
